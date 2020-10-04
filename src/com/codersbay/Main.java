@@ -22,11 +22,9 @@ public class Main {
                     String surname = input.nextLine();
                     System.out.println("Birthday: ");
                     String birthday = input.nextLine();
-                    System.out.println("Adress: ");
-                    String adress = input.nextLine();
                     System.out.println("Gender: ");
                     String gender = input.next();
-                    saving.addPerson(firstname, surname, birthday, adress, gender);
+                    saving.addPerson(firstname, surname, birthday);
                     System.out.println("do you want to add another person press(0) press(1) to remove person press(q) to quit");
                     input.nextLine();
                 }

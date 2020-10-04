@@ -10,8 +10,8 @@ public class Saving {
         this.person = new ArrayList();
     }
 
-    public void addPerson(String firstname, String surname, String birthday, String adress, String gender) {
-        this.person.add(new Person(firstname, surname, birthday, adress, gender));
+    public void addPerson(String firstname, String surname, String birthday) {
+        this.person.add(new Person(firstname, surname, birthday);
         System.out.println(person.toString());
     }
 
