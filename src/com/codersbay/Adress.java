@@ -7,9 +7,23 @@ public class Adress {
     public String streetname;
     public String streetnumber;
 
-    public Adress(String postcode) {
+    public Adress(String postcode, String city, String streetname, String streetnumber) {
         this.postcode = postcode;
+        this.city = city;
+        this.streetname = streetname;
+        this.streetnumber = streetnumber;
     }
 
+    public Adress() {
+    }
 
+    @Override
+    public String toString() {
+        return "Adress(" +
+                "postcode='" + postcode + '\'' +
+                ", city='" + city + '\'' +
+                ", streetname='" + streetname + '\'' +
+                ", streetnumber='" + streetnumber + '\'' +
+                ')';
+    }
 }

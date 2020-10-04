@@ -7,18 +7,22 @@ public class Person {
     public String surname;
     public String birthday;
 
-    public enum gender {
+    enum Gender {
+        FEMALE,
         MALE,
-        FEMALE
-
+        OTHER
     }
 
 
-    public Person(String firstname, String surname, String birthday, String adress) {
+    public Person(String firstname, String surname, String birthday) {
         this.firstname = firstname;
         this.surname = surname;
         this.birthday = birthday;
+    }
 
+    public Person(String firstname, String surname) {
+        this.firstname = firstname;
+        this.surname = surname;
     }
 
     @Override
