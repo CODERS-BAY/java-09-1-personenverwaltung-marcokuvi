@@ -1,36 +1,43 @@
 package com.codersbay;
 
-import java.util.Date;
-
 public class Person {
+
 
     public String firstname;
     public String surname;
     public String birthday;
-    public String adress;
-    public String gender;
+    public Gender gender;
+    public Adress adress;
 
-
-    public Person(String firstname, String surname, String birthday, String adress, String gender) {
+    public Person(String firstname, String surname, String birthday, Gender gender, Adress adress) {
         this.firstname = firstname;
         this.surname = surname;
         this.birthday = birthday;
-        this.adress = adress;
         this.gender = gender;
+        this.adress = adress;
     }
 
-    public Person() {
+    public Person(String firstname, String surname, Adress adress) {
+        this.firstname = firstname;
+        this.surname = surname;
+        this.adress = adress;
+    }
 
+    public Person(String firstname, String surname, String birthday, Gender gender) {
+        this.firstname = firstname;
+        this.surname = surname;
+        this.birthday = birthday;
+        this.gender = gender;
     }
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Person(" +
                 "firstname='" + firstname + '\'' +
                 ", surname='" + surname + '\'' +
-                ", birthday=" + birthday +
-                ", adress='" + adress + '\'' +
+                ", birthday='" + birthday + '\'' +
                 ", gender=" + gender +
-                '}';
+                ", adress=" + adress +
+                ')';
     }
 }
